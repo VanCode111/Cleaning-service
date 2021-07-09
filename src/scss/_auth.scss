@@ -9,7 +9,7 @@
   &__title {
     font-size: 25px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   &__block {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
@@ -21,12 +21,15 @@
       width: 100%;
     }
   }
+  &__input + &__input {
+    margin-top: 10px;
+  }
   &__input {
     width: 100%;
-    margin-top: 10px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid;
+    position: relative;
     &:focus {
       border-color: $main-color;
     }
@@ -43,5 +46,14 @@
   &__link {
     margin-left: 10px;
     color: $main-color;
+  }
+  &__error-label {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    height: 16px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    color: #eb0849;
   }
 }

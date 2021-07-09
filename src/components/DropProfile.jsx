@@ -14,6 +14,7 @@ function DropProfile({ items }) {
   const exit = () => {
     history.push("/login");
     dispatch(setIsAuth(false));
+    localStorage.setItem("token", "");
     setActiveDrop(false);
   };
   const toggleDrop = () => {
