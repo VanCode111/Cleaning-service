@@ -1,0 +1,23 @@
+.input {
+  display: block;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  padding: 0px 10px;
+  outline: $main-color;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  &::-webkit-input-placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.38);
+  }
+  &::-moz-placeholder {
+    font-family: "Montserrat", sans-serif;
+  }
+  &:-moz-placeholder {
+    font-family: "Montserrat", sans-serif;
+  }
+  &:-ms-input-placeholder {
+    font-family: "Montserrat", sans-serif;
+  }
+}
