@@ -1,0 +1,64 @@
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card-service {
+  font-family: "Montserrat", sans-serif;
+  width: 150px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5px;
+  &__wrapper {
+    width: 150px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    margin-top: 35px;
+  }
+  &__price {
+    background-color: #fda32b;
+    border-radius: 24px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px 10px;
+  }
+  &__button {
+    width: 100%;
+    border-radius: 10px;
+  }
+  &__name {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__controllers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button-conctroller {
+    border-radius: 10px;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    width: 37px;
+  }
+}

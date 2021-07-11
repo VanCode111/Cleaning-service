@@ -1,0 +1,32 @@
+.orders {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 30px;
+  &__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  &__card {
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  }
+  &__price {
+    background-color: #fda32b;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 10px;
+    line-height: 30px;
+  }
+  &__button {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+}

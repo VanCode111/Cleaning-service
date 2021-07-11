@@ -1,7 +1,7 @@
 .profile {
   &__button {
     background-color: $main-color;
-    border-radius: 100%;
+    border-radius: 4px;
     cursor: pointer;
     padding: 8px;
     width: 40px;
@@ -31,6 +31,7 @@
     }
   }
   &__item {
+    font-weight: 600;
     padding: 10px;
     cursor: pointer;
     &:hover {

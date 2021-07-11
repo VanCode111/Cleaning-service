@@ -1,4 +1,6 @@
 import Auth from "./pages/Auth";
+import OrderClean from "./pages/OrderClean";
+import Orders from "./pages/Orders";
 
 export const authRoutes = [
   {
@@ -11,4 +13,13 @@ export const authRoutes = [
   },
 ];
 
-export const ProfileRoutes = [];
+export const ProfileRoutes = [
+  {
+    path: "/order",
+    Component: OrderClean,
+  },
+  {
+    path: "/orders",
+    Component: Orders,
+  },
+];

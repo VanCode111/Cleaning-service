@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import setIsAuth from "../redux/actionCreators/setIsAuth";
+import setUser from "../redux/actionCreators/setUser";
 import { registration, login } from "../http/userAPI";
 
 function Auth() {
@@ -21,7 +22,8 @@ function Auth() {
         response = await registration(email, password);
       }
       dispatch(setIsAuth(true));
-      history.push("/");
+      history.push("/order");
+      dispatch(setUser(response));
     } catch (error) {
       setError(error.response.data.message);
       console.log(error.response.data.message);

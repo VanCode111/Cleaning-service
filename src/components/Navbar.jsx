@@ -33,12 +33,17 @@ function Navbar() {
                 Войти
               </Link>
             ) : (
-              <DropProfile
-                items={[
-                  { name: "Профиль", path: "/profile" },
-                  { name: "Мои уборки", path: "/orders" },
-                ]}
-              />
+              <div className="navbar__buttons">
+                <Link to="/order" className="button navbar__button">
+                  Заказать уборку
+                </Link>
+                <DropProfile
+                  items={[
+                    { name: "Профиль", path: "/profile" },
+                    { name: "Мои уборки", path: "/orders" },
+                  ]}
+                />
+              </div>
             )}
           </div>
         </div>

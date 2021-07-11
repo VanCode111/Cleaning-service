@@ -1,0 +1,26 @@
+.order-clean {
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+  }
+  &__wrapper {
+    padding: 30px 0px;
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__button {
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}

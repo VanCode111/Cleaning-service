@@ -11,7 +11,7 @@ const AppRouter = () => {
       {ProfileRoutes.map(({ path, Component }) => {
         return <Route key={path} path={path} component={Component} exact />;
       })}
-      <Redirect to="/" />
+      <Redirect to="/login" />
     </Switch>
   );
 };
